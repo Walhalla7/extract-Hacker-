@@ -297,6 +297,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyManagerRef: {fileID: 0}
+  charCon: {fileID: 3241036626905082219}
+  energyRegenInterval: 0.5
 --- !u!1 &7179626924477752443
 GameObject:
   m_ObjectHideFlags: 0

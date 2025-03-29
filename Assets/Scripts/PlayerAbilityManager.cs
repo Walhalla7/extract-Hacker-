@@ -7,11 +7,13 @@ public class PlayerAbilityManager : MonoBehaviour
     // ============================================================== Variables =====================================================
     // Object References
     public EnemyManager enemyManagerRef;
+    public CharacterController charCon; 
+    public Transform recallTracker; 
 
     // Energy Variables
     private int energy = 10;
     private float energyRegenTimer = 0f;
-    public const float energyRegenInterval = 10f; 
+    public float energyRegenInterval = 10f; 
     private const int maxEnergy = 10;
 
     // X-Ray Variables
@@ -19,12 +21,27 @@ public class PlayerAbilityManager : MonoBehaviour
     private float xRayTimer = 0f;
     public const float xRayDuration = 5f;
 
+    // Recall Variables
+    private Vector3[] previousPositions = new Vector3[5];
+    private float recallTimer = 0f;
+    private const float recallInterval = 1f;
+    
+    // ============================================================== Start =====================================================
+    void Start()
+    {
+        for (int i = 0; i < previousPositions.Length; i++)
+        {
+            previousPositions[i] = transform.position;
+        }
+    }
+
     // ============================================================== Update =====================================================
     void Update()
     {
         HandleAbilityUsage();
         RegenerateEnergy();
         ManageXRayTimer();
+        ManageRecallTimer();
     }
 
     // ============================================================== Input For Abilities =====================================================
@@ -45,14 +62,31 @@ public class PlayerAbilityManager : MonoBehaviour
             //  Throw Smoke Granade
             energy -= 3;
         }
+        // Activate Recall
         if (Input.GetKeyDown(KeyCode.Alpha3) && energy > 4)
         {
-            //  Recall
+            Debug.Log("Recalling to position: " + previousPositions[4]);
+
+            // Disable character controller and modify the postiion then re-enable controller
+            if (charCon != null)
+            {
+                charCon.enabled = false; 
+            }
+
+            transform.position = previousPositions[4]; 
+
+            if (charCon != null) 
+            {
+                charCon.enabled = true;
+            }
+
+            // Subtract Energy
             energy -= 5;
+            Debug.Log(energy);
         }
     }
 
-    // ============================================================== Variables =====================================================
+    // ============================================================== Energy Functions =====================================================
     // Timer Logic which regenerates energy when energy is below it's maximum
     void RegenerateEnergy()
     {
@@ -68,7 +102,7 @@ public class PlayerAbilityManager : MonoBehaviour
         }
     }
 
-    // ============================================================== Variables =====================================================
+    // ============================================================== X-Ray Function =====================================================
     // Timer logic for the X-Ray to de-activate itself after 5 sec
      void ManageXRayTimer()
     {
@@ -80,6 +114,24 @@ public class PlayerAbilityManager : MonoBehaviour
                 enemyManagerRef.activateXRay(); 
                 isXRayActive = false;
             }
+        }
+    }
+
+    // ============================================================== Recall Function =====================================================
+    // Timer logic which modifies the recall position every second 
+    void ManageRecallTimer()
+    {
+        recallTimer += Time.deltaTime;
+        if (recallTimer >= recallInterval)
+        {
+            for (int i = previousPositions.Length - 1; i > 0; i--)
+            {
+                previousPositions[i] = previousPositions[i - 1];
+            }
+            previousPositions[0] = transform.position;
+            // Move the tracker to show where the recall will take player
+            recallTracker.position = previousPositions[4];
+            recallTimer = 0f;
         }
     }
 }
