@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class EnemyManager : MonoBehaviour
 {
+    // ============================================================== Variables =====================================================
     public LayerMask defaultLayer;
     public LayerMask xRayLayer;
 
     private bool xRayActive;
 
+    // ============================================================== X-Ray Variables =====================================================
+    // Applies the change of visibility layer to all the children of the component
     void SetLayerAllChildren(Transform root, int layer)
     {
         var children = root.GetComponentsInChildren<Transform>(includeInactive: true);
@@ -19,8 +22,10 @@ public class EnemyManager : MonoBehaviour
         }
     }
 
+    // Changes the rendering layer, causing enemies to be visible through the walls
     public void activateXRay()
     {
+        // De-Activate X-Ray
         if(xRayActive)
         {
             xRayActive = !xRayActive;
@@ -32,6 +37,7 @@ public class EnemyManager : MonoBehaviour
                 SetLayerAllChildren(transform, layerNum);
             }
         }
+        // Activate X-Ray
         else
         {
             xRayActive = !xRayActive;
@@ -43,19 +49,6 @@ public class EnemyManager : MonoBehaviour
                 SetLayerAllChildren(transform, layerNum);
             }
         }
-        
-    }
-
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
         
     }
 }
