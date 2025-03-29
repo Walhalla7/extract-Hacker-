@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    // ============================================================== Variables =====================================================
+    // Movement Variables
     public float moveSpeed = 6f, gravityModifier = 2f, jumpPower = 8f, runSpeed = 12f;
     public CharacterController charCon;
 
@@ -13,8 +15,9 @@ public class PlayerController : MonoBehaviour
     public Transform camTrans;
     public float mouseSensitivity = 2f;
     public bool invertX, invertY;
-    public float maxLookAngle = 80f; // Prevents camera flipping
+    public float maxLookAngle = 80f; 
 
+    // ============================================================== Update =====================================================
     void Update()
     {
         // Horizontal movement
@@ -29,7 +32,7 @@ public class PlayerController : MonoBehaviour
         // Apply gravity
         if (charCon.isGrounded)
         {
-            yVelocity = -1f; // Small downward force to keep grounded check stable
+            yVelocity = -1f; 
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 yVelocity = jumpPower;
