@@ -25,6 +25,12 @@ public class PlayerAbilityManager : MonoBehaviour
     private Vector3[] previousPositions = new Vector3[5];
     private float recallTimer = 0f;
     private const float recallInterval = 1f;
+
+
+    // Smoke Granade Variables
+    public GameObject cameraRef;
+    public float throwSpeed = 5f;
+    public GameObject granadePrefab; 
     
     // ============================================================== Start =====================================================
     void Start()
@@ -59,8 +65,17 @@ public class PlayerAbilityManager : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Alpha2) && energy > 2)
         {
-            //  Throw Smoke Granade
+            // Instantiate the Granade Object
+            GameObject grenade = Instantiate(granadePrefab, cameraRef.transform.position + cameraRef.transform.forward, Quaternion.identity);
+            Rigidbody rb = grenade.GetComponent<Rigidbody>();
+            // Apply the velocity to the Granade 
+            if (rb != null)
+            {
+                rb.velocity = cameraRef.transform.forward * throwSpeed;
+            }       
+            // Subtract Energy     
             energy -= 3;
+            Debug.Log(energy);
         }
         // Activate Recall
         if (Input.GetKeyDown(KeyCode.Alpha3) && energy > 4)

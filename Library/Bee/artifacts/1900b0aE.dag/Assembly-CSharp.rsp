@@ -365,6 +365,8 @@
 "Assets/Scripts/GameManagerScript.cs"
 "Assets/Scripts/PlayerAbilityManager.cs"
 "Assets/Scripts/PlayerController.cs"
+"Assets/Scripts/SmokeEffectScript.cs"
+"Assets/Scripts/SmokeGranadeShapeScript.cs"
 "Assets/TutorialInfo/Scripts/Readme.cs"
 -langversion:9.0
 
