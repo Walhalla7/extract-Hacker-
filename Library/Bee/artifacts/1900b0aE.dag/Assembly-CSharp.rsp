@@ -371,6 +371,8 @@
 "Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/SmokeEffectScript.cs"
 "Assets/Scripts/SmokeGranadeShapeScript.cs"
+"Assets/_Barking_Dog/Common Scripts/MouseLook.cs"
+"Assets/_Barking_Dog/Common Scripts/Turn_Move.cs"
 -langversion:9.0
 
 /deterministic
