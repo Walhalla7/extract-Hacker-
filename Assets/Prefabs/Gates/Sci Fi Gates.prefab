@@ -9,9 +9,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4972167997025879799}
+  - component: {fileID: 1240918286886667887}
+  - component: {fileID: 2790416262129458328}
   m_Layer: 0
   m_Name: Sci Fi Gates
-  m_TagString: Untagged
+  m_TagString: Doors
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34,6 +36,44 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1240918286886667887
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4972167997025983191}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.3, y: 3, z: 3.7}
+  m_Center: {x: 0, y: 0, z: -0.9}
+--- !u!114 &2790416262129458328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4972167997025983191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9432e483cadeb447955b561edcdd715, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isLocked: 0
+  doorLeft: {fileID: 4972167997025879801}
+  doorRight: {fileID: 4972167997025879807}
+  openDistance: 1
+  openSpeed: 2
 --- !u!1 &4972167997025983193
 GameObject:
   m_ObjectHideFlags: 0
@@ -46,7 +86,7 @@ GameObject:
   - component: {fileID: 4972167997029304025}
   - component: {fileID: 4972167997028172825}
   - component: {fileID: 6745847948462914806}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Door_Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -152,7 +192,8 @@ GameObject:
   - component: {fileID: 4972167997028172829}
   - component: {fileID: 2950759443231910624}
   - component: {fileID: 7316673996175402292}
-  m_Layer: 0
+  - component: {fileID: 3654969920330637196}
+  m_Layer: 2
   m_Name: Frame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -266,6 +307,27 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.29879028, y: 2.8918407, z: 0.4}
   m_Center: {x: 0, y: 0, z: -1.7}
+--- !u!65 &3654969920330637196
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4972167997025983197}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.29879028, y: 0.4, z: 3.6703398}
+  m_Center: {x: 0, y: 1.32, z: 0}
 --- !u!1 &4972167997025983199
 GameObject:
   m_ObjectHideFlags: 0
@@ -278,7 +340,7 @@ GameObject:
   - component: {fileID: 4972167997029304031}
   - component: {fileID: 4972167997028172831}
   - component: {fileID: 2499912438980987465}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Door_Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}

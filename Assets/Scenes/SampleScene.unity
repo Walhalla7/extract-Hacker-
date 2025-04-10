@@ -559,6 +559,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2790416262129458328, guid: 22d2c44fed4ffa743aac7afe4d993905,
+        type: 3}
+      propertyPath: openDistance
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4972167997025879799, guid: 22d2c44fed4ffa743aac7afe4d993905,
         type: 3}
       propertyPath: m_RootOrder
@@ -781,6 +786,11 @@ PrefabInstance:
         type: 3}
       propertyPath: energyRegenInterval
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1155217632302170296, guid: 8f5b4f7fc0834a1489674a7bb16fa6ee,
+        type: 3}
+      propertyPath: maxInteractDistance
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 4723944847864118149, guid: 8f5b4f7fc0834a1489674a7bb16fa6ee,
         type: 3}

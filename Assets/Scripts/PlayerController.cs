@@ -17,9 +17,17 @@ public class PlayerController : MonoBehaviour
     public bool invertX, invertY;
     public float maxLookAngle = 80f;
 
+    // Raycast Variables    
+    public float maxInteractDistance = 2.5f;
+
     // ============================================================== Update =====================================================
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            Interaction();
+        }
+
         // Horizontal movement
         Vector3 vertMove = transform.forward * Input.GetAxisRaw("Vertical");
         Vector3 horiMove = transform.right * Input.GetAxisRaw("Horizontal");
@@ -59,4 +67,29 @@ public class PlayerController : MonoBehaviour
 
         camTrans.localEulerAngles = new Vector3(camRotationX, 0f, 0f);
     }
+
+    // ============================================================== Update =====================================================
+    // Send out a raycast and interact with an object in front of player
+    void Interaction()
+    {
+        //Send out raycast
+        RaycastHit hit;
+        if (Physics.Raycast(camTrans.position, camTrans.TransformDirection(Vector3.forward), out hit, maxInteractDistance))
+        {
+            //Draw Visualization of Ray
+            //Debug.DrawRay(camTrans.position, camTrans.TransformDirection(Vector3.forward) * hit.distance, Color.red, maxInteractDistance);
+
+            // Door Interaction
+            if (hit.transform.CompareTag("Doors"))
+            {
+                DoorScript doorRef = hit.transform.GetComponent<DoorScript>();
+                if (doorRef != null)
+                {
+                    doorRef.DoorInteract();
+                }
+            }
+
+        }
+    }
+
 }
