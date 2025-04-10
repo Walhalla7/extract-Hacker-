@@ -15,14 +15,14 @@ public class PlayerController : MonoBehaviour
     public Transform camTrans;
     public float mouseSensitivity = 2f;
     public bool invertX, invertY;
-    public float maxLookAngle = 80f; 
+    public float maxLookAngle = 80f;
 
     // ============================================================== Update =====================================================
     void Update()
     {
         // Horizontal movement
-        Vector3 vertMove = transform.forward * Input.GetAxis("Vertical");
-        Vector3 horiMove = transform.right * Input.GetAxis("Horizontal");
+        Vector3 vertMove = transform.forward * Input.GetAxisRaw("Vertical");
+        Vector3 horiMove = transform.right * Input.GetAxisRaw("Horizontal");
         moveInput = (horiMove + vertMove).normalized;
 
         // Running
@@ -32,7 +32,7 @@ public class PlayerController : MonoBehaviour
         // Apply gravity
         if (charCon.isGrounded)
         {
-            yVelocity = -1f; 
+            yVelocity = -1f;
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 yVelocity = jumpPower;
@@ -52,7 +52,7 @@ public class PlayerController : MonoBehaviour
         if (invertY) mouseInput.y = -mouseInput.y;
 
         transform.Rotate(0f, mouseInput.x, 0f);
-        
+
         float camRotationX = camTrans.localEulerAngles.x - mouseInput.y;
         if (camRotationX > 180f) camRotationX -= 360f;
         camRotationX = Mathf.Clamp(camRotationX, -maxLookAngle, maxLookAngle);
