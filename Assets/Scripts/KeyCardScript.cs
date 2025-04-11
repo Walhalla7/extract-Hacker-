@@ -8,7 +8,6 @@ public class KeyCardScript : MonoBehaviour
     // ============================================================== Variables =====================================================
     // Object References    
     public DoorScript doorRef;
-    public Transform cardRef;
 
     // ============================================================== Start =====================================================
     // Lock the door

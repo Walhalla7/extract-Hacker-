@@ -77,8 +77,7 @@ public class PlayerController : MonoBehaviour
         if (Physics.Raycast(camTrans.position, camTrans.TransformDirection(Vector3.forward), out hit, maxInteractDistance))
         {
             //Draw Visualization of Ray
-            Debug.DrawRay(camTrans.position, camTrans.TransformDirection(Vector3.forward) * hit.distance, Color.red, maxInteractDistance);
-            Debug.Log(hit.transform.tag);
+            //Debug.DrawRay(camTrans.position, camTrans.TransformDirection(Vector3.forward) * hit.distance, Color.red, maxInteractDistance);
 
             // Door Interaction
             if (hit.transform.CompareTag("Doors"))
@@ -93,7 +92,6 @@ public class PlayerController : MonoBehaviour
             // Key Interact
             if (hit.transform.CompareTag("Key"))
             {
-                Debug.Log("HI");
                 KeyCardScript keyRef = hit.transform.GetComponent<KeyCardScript>();
                 if (keyRef != null)
                 {
