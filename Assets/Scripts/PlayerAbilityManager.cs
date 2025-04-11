@@ -11,6 +11,7 @@ public class PlayerAbilityManager : MonoBehaviour
     public CharacterController charCon;
     public Transform recallTracker;
     public TextMeshProUGUI energyText;
+    public EnergyBarManager energyBarRef;
 
     // Energy Variables
     private int energy = 10;
@@ -41,6 +42,7 @@ public class PlayerAbilityManager : MonoBehaviour
         {
             previousPositions[i] = transform.position;
         }
+        energyBarRef.SetMaxEnergy(maxEnergy);
     }
 
     // ============================================================== Update =====================================================
@@ -152,6 +154,7 @@ public class PlayerAbilityManager : MonoBehaviour
     // Updates current energy level in the textbox
     void UpdateEnergyText()
     {
-        energyText.GetComponent<TextMeshProUGUI>().text = "Current Energy: " + energy + " / 10";
+        //energyText.GetComponent<TextMeshProUGUI>().text = "Current Energy: " + energy + " / 10";
+        energyBarRef.SetEnergy(energy);
     }
 }
