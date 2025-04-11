@@ -367,6 +367,7 @@
 "Assets/Scripts/DoorScript.cs"
 "Assets/Scripts/EnemyManager.cs"
 "Assets/Scripts/GameManagerScript.cs"
+"Assets/Scripts/KeyCardScript.cs"
 "Assets/Scripts/PlayerAbilityManager.cs"
 "Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/SmokeEffectScript.cs"
