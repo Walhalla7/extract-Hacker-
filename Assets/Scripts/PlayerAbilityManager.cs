@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class PlayerAbilityManager : MonoBehaviour
@@ -8,7 +9,8 @@ public class PlayerAbilityManager : MonoBehaviour
     // Object References
     public EnemyManager enemyManagerRef;
     public CharacterController charCon; 
-    public Transform recallTracker; 
+    public Transform recallTracker;
+    public TextMeshProUGUI energyText;
 
     // Energy Variables
     private int energy = 10;
@@ -46,6 +48,7 @@ public class PlayerAbilityManager : MonoBehaviour
     {
         HandleAbilityUsage();
         RegenerateEnergy();
+        UpdateEnergyText();
         ManageXRayTimer();
         ManageRecallTimer();
     }
@@ -148,5 +151,12 @@ public class PlayerAbilityManager : MonoBehaviour
             recallTracker.position = previousPositions[4];
             recallTimer = 0f;
         }
+    }
+
+    // ============================================================== Text Update Function =====================================================
+    // Updates current energy level in the textbox
+    void UpdateEnergyText()
+    {
+        energyText.GetComponent<TextMeshProUGUI>().text = "Current Energy: " + energy + " / 10";
     }
 }
