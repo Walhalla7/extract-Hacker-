@@ -20,6 +20,11 @@ public class PlayerController : MonoBehaviour
     // Raycast Variables    
     public float maxInteractDistance = 2.5f;
 
+
+    // Animator
+    public Animator animator;
+
+
     // ============================================================== Update =====================================================
     void Update()
     {
@@ -28,16 +33,28 @@ public class PlayerController : MonoBehaviour
             Interaction();
         }
 
-        // Horizontal movement
+        HandleMovement();
+        HandleJump();
+        HandleMouseLook();
+    }
+
+    // ============================================================== Movement =====================================================
+    public void HandleMovement()
+    {
         Vector3 vertMove = transform.forward * Input.GetAxisRaw("Vertical");
         Vector3 horiMove = transform.right * Input.GetAxisRaw("Horizontal");
-        moveInput = (horiMove + vertMove).normalized;
+        Vector3 horizontalInput = (horiMove + vertMove).normalized;
 
-        // Running
         float currentSpeed = Input.GetKey(KeyCode.LeftShift) ? runSpeed : moveSpeed;
-        moveInput *= currentSpeed;
+        moveInput = horizontalInput * currentSpeed;
 
-        // Apply gravity
+        moveInput.y = yVelocity;
+        charCon.Move(moveInput * Time.deltaTime);
+    }
+
+    // ============================================================== Jump =====================================================
+    public void HandleJump()
+    {
         if (charCon.isGrounded)
         {
             yVelocity = -1f;
@@ -50,11 +67,11 @@ public class PlayerController : MonoBehaviour
         {
             yVelocity += Physics.gravity.y * gravityModifier * Time.deltaTime;
         }
+    }
 
-        moveInput.y = yVelocity;
-        charCon.Move(moveInput * Time.deltaTime);
-
-        // Mouse Look
+    // ============================================================== Mouse Look =====================================================
+    void HandleMouseLook()
+    {
         Vector2 mouseInput = new Vector2(Input.GetAxisRaw("Mouse X"), Input.GetAxisRaw("Mouse Y")) * mouseSensitivity;
         if (invertX) mouseInput.x = -mouseInput.x;
         if (invertY) mouseInput.y = -mouseInput.y;
