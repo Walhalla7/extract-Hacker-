@@ -374,6 +374,7 @@
 "Assets/Scripts/EnemyManager.cs"
 "Assets/Scripts/EnemyStates/EnemyBaseState.cs"
 "Assets/Scripts/EnemyStates/EnemyChaseState.cs"
+"Assets/Scripts/EnemyStates/EnemyDetectionState.cs"
 "Assets/Scripts/EnemyStates/EnemyWonderState.cs"
 "Assets/Scripts/EnemyStates/PlayerDetector.cs"
 "Assets/Scripts/EnergyBarManager.cs"
