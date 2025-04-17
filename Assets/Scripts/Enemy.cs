@@ -27,9 +27,12 @@ public class Enemy : MonoBehaviour
 
         var wanderState = new EnemyWanderState(this, animator, agent, wanderRadius, lightRef);
         var chaseState = new EnemyChaseState(this, animator, agent, playerDetector.Player, lightRef);
+        var detectionState = new EnemyDetectionState(this, animator, agent, wanderRadius, playerDetector.Player, lightRef);
 
-        At(wanderState, chaseState, new FuncPredicate(() => playerDetector.CanDetectPlayer()));
-        At(chaseState, wanderState, new FuncPredicate(() => !playerDetector.CanDetectPlayer()));
+        At(wanderState, detectionState, new FuncPredicate(() => playerDetector.currentEnemyAwareness > 0));
+        At(detectionState, wanderState, new FuncPredicate(() => playerDetector.currentEnemyAwareness == 0));
+        At(detectionState, chaseState, new FuncPredicate(() => playerDetector.currentEnemyAwareness >= playerDetector.maxEnemyAwareness * 0.7));
+        At(chaseState, detectionState, new FuncPredicate(() => playerDetector.currentEnemyAwareness < playerDetector.maxEnemyAwareness * 0.7));
         stateMachine.SetState(wanderState);
     }
 

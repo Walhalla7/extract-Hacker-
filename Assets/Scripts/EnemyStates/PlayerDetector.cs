@@ -8,7 +8,14 @@ public class PlayerDetector : MonoBehaviour
     [SerializeField] float detectionRadius = 10f; // Large circle around enemy
     [SerializeField] float innerDetectionRadius = 5f; // Small circle around enemy
     [SerializeField] float detectionCooldown = 1f; // Time between detections
-    [SerializeField] float attackRange = 2f; // Distance from enemy to player to attack
+    [SerializeField] float attackRange = 5f; // Distance from enemy to player to attack
+    [SerializeField] float noticeRate = 0.1f;
+
+    public float currentEnemyAwareness = 0f;
+    public float generalEnemyAwareness = 0f;
+    public float maxEnemyAwareness = 100f;
+    public float globalPrisonAwareness = 0f;
+
 
     public Transform Player { get; private set; }
 
@@ -27,7 +34,34 @@ public class PlayerDetector : MonoBehaviour
         detectionStrategy = new ConeDetectionStrategy(detectionAngle, detectionRadius, innerDetectionRadius);
     }
 
-    void Update() => detectionTimer.Tick(Time.deltaTime);
+    void Update()
+    {
+        detectionTimer.Tick(Time.deltaTime);
+        if (CanDetectPlayer())
+        {
+            float currentNoticeRatio = noticeRate;
+            if (CanAttackPlayer())
+            {
+                currentNoticeRatio = currentNoticeRatio * 5f;
+            }
+            float totalAwarenessGained = currentNoticeRatio + generalEnemyAwareness + globalPrisonAwareness;
+
+            if (currentEnemyAwareness != maxEnemyAwareness && currentEnemyAwareness + totalAwarenessGained >= maxEnemyAwareness)
+            {
+                generalEnemyAwareness += 0.5f;
+            }
+
+            currentEnemyAwareness = Mathf.Min(currentEnemyAwareness + totalAwarenessGained, maxEnemyAwareness);
+            Debug.Log("currentNoticeRatio: " + currentNoticeRatio);
+            Debug.Log("generalEnemyAwareness: " + generalEnemyAwareness);
+            Debug.Log("globalPrisonAwareness: " + globalPrisonAwareness);
+        }
+        else
+        {
+            currentEnemyAwareness = Mathf.Max(currentEnemyAwareness - noticeRate, 0);
+            //Debug.Log(currentEnemyAwareness);
+        }
+    }
 
     public bool CanDetectPlayer()
     {
