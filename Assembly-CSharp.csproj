@@ -83,6 +83,7 @@
     <Compile Include="Assets\Scripts\EnemyStates\PlayerDetector.cs" />
     <Compile Include="Assets\Scripts\StateMachine\JumpState.cs" />
     <Compile Include="Assets\Scripts\PlayerAbilityManager.cs" />
+    <Compile Include="Assets\Scripts\EnemyStates\EnemyDetectionState.cs" />
     <Compile Include="Assets\Scripts\StateMachine\ConeDetectionStrategy.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -1,0 +1,769 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.4f1 (35713cd46cd7) revision 3502396'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'en' Physical Memory: 15775 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.4f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker6
+-projectPath
+C:/Users/ianal/OneDrive/Documents/GitHub/extract-Hacker-
+-logFile
+Logs/AssetImportWorker6.log
+-srvPort
+50616
+Successfully changed project path to: C:/Users/ianal/OneDrive/Documents/GitHub/extract-Hacker-
+C:/Users/ianal/OneDrive/Documents/GitHub/extract-Hacker-
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [15892] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 375642009 [EditorId] 375642009 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-H19LLI3S) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [15892] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 375642009 [EditorId] 375642009 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-H19LLI3S) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 32.15 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.4f1 (35713cd46cd7)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.4f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/ianal/OneDrive/Documents/GitHub/extract-Hacker-/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3060 Laptop GPU (ID=0x2520)
+    Vendor:   NVIDIA
+    VRAM:     6010 MB
+    Driver:   31.0.15.4680
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.4f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.4f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.4f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56488
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.4f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.029751 seconds.
+- Loaded All Assemblies, in  0.684 seconds
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.580 seconds
+Domain Reload Profiling: 1258ms
+	BeginReloadAssembly (184ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (73ms)
+	RebuildNativeTypeToScriptingClass (20ms)
+	initialDomainReloadingComplete (144ms)
+	LoadAllAssembliesAndSetupDomain (256ms)
+		LoadAssemblies (178ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (238ms)
+			TypeCache.Refresh (237ms)
+				TypeCache.ScanAssembly (215ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (581ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (433ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (22ms)
+			SetLoadedEditorAssemblies (17ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (4ms)
+			ProcessInitializeOnLoadAttributes (301ms)
+			ProcessInitializeOnLoadMethodAttributes (90ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\ianal\OneDrive\Documents\GitHub\extract-Hacker-\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\ianal\OneDrive\Documents\GitHub\extract-Hacker-\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  1.663 seconds
+Refreshing native plugins compatible for Editor in 20.59 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.607 seconds
+Domain Reload Profiling: 3258ms
+	BeginReloadAssembly (263ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (12ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (43ms)
+	RebuildCommonClasses (69ms)
+	RebuildNativeTypeToScriptingClass (20ms)
+	initialDomainReloadingComplete (103ms)
+	LoadAllAssembliesAndSetupDomain (1196ms)
+		LoadAssemblies (698ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (607ms)
+			TypeCache.Refresh (547ms)
+				TypeCache.ScanAssembly (519ms)
+			ScanForSourceGeneratedMonoScriptInfo (44ms)
+			ResolveRequiredComponents (15ms)
+	FinalizeReload (1608ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1267ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (15ms)
+			SetLoadedEditorAssemblies (19ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (213ms)
+			ProcessInitializeOnLoadAttributes (857ms)
+			ProcessInitializeOnLoadMethodAttributes (129ms)
+			AfterProcessingInitializeOnLoad (33ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (12ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.16 seconds
+Refreshing native plugins compatible for Editor in 16.47 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5172 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 77 unused Assets / (1.6 MB). Loaded Objects now: 5628.
+Memory consumption went from 221.8 MB to 220.3 MB.
+Total: 10.455600 ms (FindLiveObjects: 0.847600 ms CreateObjectMapping: 0.401500 ms MarkObjects: 6.880500 ms  DeleteObjects: 2.323500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: d54d2f2da18e7612c182cf67624b6b12 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1030.366430 seconds.
+  path: Assets/Settings/URP-Balanced.asset
+  artifactKey: Guid(e1260c1148f6143b28bae5ace5e9c5d1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Settings/URP-Balanced.asset using Guid(e1260c1148f6143b28bae5ace5e9c5d1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f232faa09722e990ce71360fc89aae04') in 0.467058 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000344 seconds.
+  path: Assets/Mesh/Wall_Meshes/Fan_01.FBX
+  artifactKey: Guid(64d2cd6749bca4f3892daf258e7c68a2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Mesh/Wall_Meshes/Fan_01.FBX using Guid(64d2cd6749bca4f3892daf258e7c68a2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '71badfe3e62440b1f351988ea83db1e3') in 0.088774 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000515 seconds.
+  path: Assets/Materials/Gates
+  artifactKey: Guid(f9977bf57888ca4468eb2668e6d040f2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Materials/Gates using Guid(f9977bf57888ca4468eb2668e6d040f2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'cc8d9dc8a5d5638245c9fea02dffd271') in 0.118825 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001539 seconds.
+  path: Assets/SciFi Warehouse Kit/Prefabs/Structures/Catwalk/Catwalk Pillar 01.prefab
+  artifactKey: Guid(725564bae3f68e847ad41c0da4390174) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b)
+Start importing Assets/SciFi Warehouse Kit/Prefabs/Structures/Catwalk/Catwalk Pillar 01.prefab using Guid(725564bae3f68e847ad41c0da4390174) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '6778f22abbe604c5787b88276236e005') in 0.045520 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.017239 seconds.
+  path: Assets/HorrorPuzzleItems/Crank/Prefabs/Crank.prefab
+  artifactKey: Guid(ecac38706cd74b24cb201deacea4dec0) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b)
+Start importing Assets/HorrorPuzzleItems/Crank/Prefabs/Crank.prefab using Guid(ecac38706cd74b24cb201deacea4dec0) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '2d03011f89aa91ac84ec13c0e61adddb') in 0.107234 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 0.023623 seconds.
+  path: Assets/HorrorPuzzleItems/USBKey/Prefabs/USBKey_Yellow.prefab
+  artifactKey: Guid(d515447a17eed434594c63e185a4d427) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b)
+Start importing Assets/HorrorPuzzleItems/USBKey/Prefabs/USBKey_Yellow.prefab using Guid(d515447a17eed434594c63e185a4d427) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'db16e728030fb499056dcec8138c2e64') in 0.056631 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 0.001184 seconds.
+  path: Assets/SciFi Warehouse Kit/Prefabs/Props/Crates Barrels Pallets/Pallet Variations/Pallet Variation 01.prefab
+  artifactKey: Guid(350af83ef7fbacf4c81d93aaca7de956) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b)
+Start importing Assets/SciFi Warehouse Kit/Prefabs/Props/Crates Barrels Pallets/Pallet Variations/Pallet Variation 01.prefab using Guid(350af83ef7fbacf4c81d93aaca7de956) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '142e3b2eac3686de488ce6d622c236c6') in 0.047501 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 35
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/SciFi Warehouse Kit/Prefabs/Structures/Walls/Wall BayDoor.prefab
+  artifactKey: Guid(d324de115c4dff845bee7b7f166883c4) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b)
+Start importing Assets/SciFi Warehouse Kit/Prefabs/Structures/Walls/Wall BayDoor.prefab using Guid(d324de115c4dff845bee7b7f166883c4) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'e2f32d62443283d31862a0be723a637f') in 0.045488 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 25
+========================================================================
+Received Import Request.
+  Time since last request: 0.000753 seconds.
+  path: Assets/HorrorPuzzleItems/Gem/Materials/Gem_Red.mat
+  artifactKey: Guid(f7bb5bc051f54134fb73c705cfd57f92) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/HorrorPuzzleItems/Gem/Materials/Gem_Red.mat using Guid(f7bb5bc051f54134fb73c705cfd57f92) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c8cf839a39e3f870f00a7b81909fa845') in 0.102860 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000972 seconds.
+  path: Assets/HorrorPuzzleItems/Floppy/Materials
+  artifactKey: Guid(748829e638722f849a676e163f8cec86) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/HorrorPuzzleItems/Floppy/Materials using Guid(748829e638722f849a676e163f8cec86) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c84a0ae58c46c17e7224d04fbf6e0b6d') in 0.033397 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000416 seconds.
+  path: Assets/Grenades_Lowpoly/Grenade2/grenade2_lowpoly_prefab.prefab
+  artifactKey: Guid(9a9d1b62ca2ce0e4b8179873619e38e3) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b)
+Start importing Assets/Grenades_Lowpoly/Grenade2/grenade2_lowpoly_prefab.prefab using Guid(9a9d1b62ca2ce0e4b8179873619e38e3) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '79a77a537f5180c2adcbd7fbd5a61e18') in 0.079626 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/SciFi Warehouse Kit/Prefabs/Props/Crates Barrels Pallets/Pallet Variations/Pallet Variation 02.prefab
+  artifactKey: Guid(1a91b66dee996324fa51df60c547b29d) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b)
+Start importing Assets/SciFi Warehouse Kit/Prefabs/Props/Crates Barrels Pallets/Pallet Variations/Pallet Variation 02.prefab using Guid(1a91b66dee996324fa51df60c547b29d) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '4e3f29f2ef871fcaba91c4c346ea67da') in 0.064313 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/HorrorPuzzleItems/USBKey/Prefabs/USBKey_Yellow.prefab
+  artifactKey: Guid(d515447a17eed434594c63e185a4d427) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/HorrorPuzzleItems/USBKey/Prefabs/USBKey_Yellow.prefab using Guid(d515447a17eed434594c63e185a4d427) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '352b0271b2491c82cb75ab3854728235') in 0.040770 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000355 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_SDF.shader
+  artifactKey: Guid(68e6db2ebdc24f95958faec2be5558d6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Shaders/TMP_SDF.shader using Guid(68e6db2ebdc24f95958faec2be5558d6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'd4710b86f0ccfd0493e51b151d12d266') in 0.045038 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000951 seconds.
+  path: Assets/Mesh/Wall_Meshes/Door_Left_01.FBX
+  artifactKey: Guid(7fe4a827493384beea453a7d680fa266) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Mesh/Wall_Meshes/Door_Left_01.FBX using Guid(7fe4a827493384beea453a7d680fa266) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '820f53d856cc00040c76368aa192d16c') in 0.044084 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.006465 seconds.
+  path: Assets/Prefabs/Wall_Prefabs/Floor_Small_01.prefab
+  artifactKey: Guid(1acd03bc537c24f3484ab4d6f07b9e02) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Prefabs/Wall_Prefabs/Floor_Small_01.prefab using Guid(1acd03bc537c24f3484ab4d6f07b9e02) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ea3e935669d4171b8586e8fbe7738426') in 0.037272 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.004031 seconds.
+  path: Assets/SciFi Warehouse Kit/Prefabs/Props/Misc Props/Security Cam.prefab
+  artifactKey: Guid(e16cc1b8be9796744b8e44545a6aca19) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b)
+Start importing Assets/SciFi Warehouse Kit/Prefabs/Props/Misc Props/Security Cam.prefab using Guid(e16cc1b8be9796744b8e44545a6aca19) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'bcb3557bcc3988673c152ad489b09c19') in 0.058004 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Prefabs/SmokeGranadeShape.prefab
+  artifactKey: Guid(5a22f0927a963a44d94441f95c37695e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Prefabs/SmokeGranadeShape.prefab using Guid(5a22f0927a963a44d94441f95c37695e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '56702e0af410bbbdda459a9c8a5c13a7') in 0.077418 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 28
+========================================================================
+Received Import Request.
+  Time since last request: 0.003124 seconds.
+  path: Assets/SciFi Warehouse Kit/Prefabs/Structures/Walls/Wall Door 02.prefab
+  artifactKey: Guid(01f7094c0e795ad47b0ef77f3cf2ae66) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b)
+Start importing Assets/SciFi Warehouse Kit/Prefabs/Structures/Walls/Wall Door 02.prefab using Guid(01f7094c0e795ad47b0ef77f3cf2ae66) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '2cc33a3a42958e9453716c1c21068224') in 0.041974 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 0.000519 seconds.
+  path: Assets/Test_Map/Test_MapSettings.lighting
+  artifactKey: Guid(f2717e9b677438547bbf7274dc91f83e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Test_Map/Test_MapSettings.lighting using Guid(f2717e9b677438547bbf7274dc91f83e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) LightingSettings: switching bake backend from 1 to 0.
+Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '1c73e3a696ef6baeae04370b5538f4b3') in 0.068567 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.003967 seconds.
+  path: Assets/HorrorPuzzleItems/Valve/Models/Valve.fbx
+  artifactKey: Guid(1a8afd91254f77442840b2bf602b101b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/HorrorPuzzleItems/Valve/Models/Valve.fbx using Guid(1a8afd91254f77442840b2bf602b101b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '42a0532cda0aacff1364fe0f5e18ff60') in 0.051406 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.012197 seconds.
+  path: Assets/HorrorPuzzleItems/Lighter/Models/Lighter_Metal.fbx
+  artifactKey: Guid(e7e0a9650257e5f47818cd70694ce099) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/HorrorPuzzleItems/Lighter/Models/Lighter_Metal.fbx using Guid(e7e0a9650257e5f47818cd70694ce099) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c9884a5f0959e140fb508bfe3b9790a1') in 0.046411 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000245 seconds.
+  path: Assets/Prefabs/KeyCards/Card/Prefabs/Card_GateRed.prefab
+  artifactKey: Guid(5bbc0ec83dface3418b0ae505a847eb0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Prefabs/KeyCards/Card/Prefabs/Card_GateRed.prefab using Guid(5bbc0ec83dface3418b0ae505a847eb0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '81c0bec6dc9d1dbfe0797eb665b62075') in 0.031921 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000323 seconds.
+  path: Assets/HorrorPuzzleItems/SmallKey/Models
+  artifactKey: Guid(7df7b11f1ac646d438fa51232e50448b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/HorrorPuzzleItems/SmallKey/Models using Guid(7df7b11f1ac646d438fa51232e50448b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '1925c6553ca75b48b50bee762cd5097d') in 0.042743 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000517 seconds.
+  path: Assets/HorrorPuzzleItems/Crank/Textures
+  artifactKey: Guid(2b402df4499dab14ab74c7de10a6c1e2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/HorrorPuzzleItems/Crank/Textures using Guid(2b402df4499dab14ab74c7de10a6c1e2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '2fb16b1e9585f72fcc31c0b8b9d7f439') in 0.028226 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.005875 seconds.
+  path: Assets/HorrorPuzzleItems/SmallKey/Icons/Icon_SmallKey_Rusty.png
+  artifactKey: Guid(13c925c9c6716194f9fe832914b37154) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/HorrorPuzzleItems/SmallKey/Icons/Icon_SmallKey_Rusty.png using Guid(13c925c9c6716194f9fe832914b37154) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'e975bd64be2588e1a159fb6e86a2f5fd') in 0.147261 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.012392 seconds.
+  path: Assets/HorrorPuzzleItems/SmallKey/Prefabs
+  artifactKey: Guid(154e8449f51efab40a0d7c19ca8b329d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/HorrorPuzzleItems/SmallKey/Prefabs using Guid(154e8449f51efab40a0d7c19ca8b329d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '04d9fe290ad251798bff4d549817abab') in 0.038526 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.011430 seconds.
+  path: Assets/HorrorPuzzleItems/USBKey/Models/USBKey.fbx
+  artifactKey: Guid(c811bda51e5d99f4cb0bc62135ecd239) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/HorrorPuzzleItems/USBKey/Models/USBKey.fbx using Guid(c811bda51e5d99f4cb0bc62135ecd239) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '21e323959e17c171938b096213b1c0ec') in 0.087578 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.013158 seconds.
+  path: Assets/Prefabs/KeyCards/Card/Textures/Card_GateSystemRed.png
+  artifactKey: Guid(6e4f20cb35dba394b9e0dc75f4fddb2a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Prefabs/KeyCards/Card/Textures/Card_GateSystemRed.png using Guid(6e4f20cb35dba394b9e0dc75f4fddb2a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '07d633e2b3f77f70c8b0876de7fcbb12') in 0.060409 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.005483 seconds.
+  path: Assets/HorrorPuzzleItems/SmallKey/Models/SmallKey.fbx
+  artifactKey: Guid(501a19826a840da4a93f946d0d749a6e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/HorrorPuzzleItems/SmallKey/Models/SmallKey.fbx using Guid(501a19826a840da4a93f946d0d749a6e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '1852d19f05cdf6eebb3592f27dc592ab') in 0.060971 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.001698 seconds.
+  path: Assets/Mesh/Wall_Meshes/Floor_01.FBX
+  artifactKey: Guid(318fc5659f68549feb9d55d15a12de2a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Mesh/Wall_Meshes/Floor_01.FBX using Guid(318fc5659f68549feb9d55d15a12de2a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '0a612e7da8230472b3c218cb9644a478') in 0.117855 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.026062 seconds.
+  path: Assets/HorrorPuzzleItems/USBKey/Icons/Icon_USBKey_Red.png
+  artifactKey: Guid(7ba37a700c7be7e4489885e8a323df23) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/HorrorPuzzleItems/USBKey/Icons/Icon_USBKey_Red.png using Guid(7ba37a700c7be7e4489885e8a323df23) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'fb1169575d733241b7312c31241a231b') in 0.143496 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.002213 seconds.
+  path: Assets/HorrorPuzzleItems/Battery/Icons/Icon_Battery_AA.png
+  artifactKey: Guid(258b2879d3bdc1b428009397e2dda85f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/HorrorPuzzleItems/Battery/Icons/Icon_Battery_AA.png using Guid(258b2879d3bdc1b428009397e2dda85f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '1eb9582432e3b690fb41687115417fbe') in 0.085198 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.010884 seconds.
+  path: Assets/HorrorPuzzleItems/Gear/Materials
+  artifactKey: Guid(efa94549f84c17249b4bdf58b4d9d0f9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/HorrorPuzzleItems/Gear/Materials using Guid(efa94549f84c17249b4bdf58b4d9d0f9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '9c3fcab4aa23a4cf653a6c1b6f7a0088') in 0.053250 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000469 seconds.
+  path: Assets/UI/Clean Vector Icons/T_5_eye_cross_.png
+  artifactKey: Guid(2251011a5d10c124ea35f86c11f5d53b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/UI/Clean Vector Icons/T_5_eye_cross_.png using Guid(2251011a5d10c124ea35f86c11f5d53b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '75204da8dc6076eadecd6f7c2bd1aca4') in 0.096574 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000653 seconds.
+  path: Assets/HorrorPuzzleItems/Floppy/Icons/Icon_Floopy_Red.png
+  artifactKey: Guid(2c2a4ae8c8f95f246acf319ca4c4df3c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/HorrorPuzzleItems/Floppy/Icons/Icon_Floopy_Red.png using Guid(2c2a4ae8c8f95f246acf319ca4c4df3c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '130862cd47d4c6913c821302a6a616de') in 0.094018 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.003520 seconds.
+  path: Assets/UI/Clean Vector Icons/T_10_cursor_!_al_.png
+  artifactKey: Guid(8589811d8f6629443ad2c9be7e027110) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/UI/Clean Vector Icons/T_10_cursor_!_al_.png using Guid(8589811d8f6629443ad2c9be7e027110) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'bb106a75cdc30b48f5b3f85f80dd4d86') in 0.072851 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.002292 seconds.
+  path: Assets/UI/Clean Vector Icons/T_3_column_double_cross_.png
+  artifactKey: Guid(833d1e8a52d7c8b4f9e8200a08721bdd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/UI/Clean Vector Icons/T_3_column_double_cross_.png using Guid(833d1e8a52d7c8b4f9e8200a08721bdd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '735dacc3855e749095a33a506d51b5a3') in 0.087710 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.001583 seconds.
+  path: Assets/UI/Clean Vector Icons/T_9_plant3_.png
+  artifactKey: Guid(e6d90fea7c6f7be4fb361575b0b18ab6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/UI/Clean Vector Icons/T_9_plant3_.png using Guid(e6d90fea7c6f7be4fb361575b0b18ab6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'd20100aea1d330323e5346aa9217f3fd') in 0.080769 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000320 seconds.
+  path: Assets/UI/Clean Vector Icons/T_18_next2_.png
+  artifactKey: Guid(27f0ae5f9f59faa49b5f2d3caa5d157c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/UI/Clean Vector Icons/T_18_next2_.png using Guid(27f0ae5f9f59faa49b5f2d3caa5d157c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f6986cdb78755048289f7aef1b1a1b9d') in 0.079889 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.002772 seconds.
+  path: Assets/Prefabs/KeyCards/Card/Textures/Card_GateSystemYellow.png
+  artifactKey: Guid(8fad648b5890103498cd9a25eb28bbea) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Prefabs/KeyCards/Card/Textures/Card_GateSystemYellow.png using Guid(8fad648b5890103498cd9a25eb28bbea) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'cd03ccc510975f058e7d261e4d55f4a7') in 0.050596 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000440 seconds.
+  path: Assets/UI/Clean Vector Icons/T_13_campfire_.png
+  artifactKey: Guid(8c500d54ff99a5546a4409724f9b5579) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/UI/Clean Vector Icons/T_13_campfire_.png using Guid(8c500d54ff99a5546a4409724f9b5579) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '7c5486ede9279b1059ff1c4fa4ad0b07') in 0.067835 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.053925 seconds.
+  path: Assets/UI/Clean Vector Icons/T_11_cursor_star_al_.png
+  artifactKey: Guid(fd412bdeb18902443bbb05cc2ec604e4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/UI/Clean Vector Icons/T_11_cursor_star_al_.png using Guid(fd412bdeb18902443bbb05cc2ec604e4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'b3bbae5fec1d100df5e5a0ce3e2d3a91') in 2.080706 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.087456 seconds.
+  path: Assets/TutorialInfo/Scripts
+  artifactKey: Guid(68c746936d189d641a624cccccf2184e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TutorialInfo/Scripts using Guid(68c746936d189d641a624cccccf2184e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ace5eabbd810eae5174984ebab004094') in 0.046447 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.037970 seconds.
+  path: Assets/SciFi Warehouse Kit/Art/Meshes/Structures/Structure Props/Sprinkler 04.fbx
+  artifactKey: Guid(db9a43d893114524999d9c3b00b34665) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/SciFi Warehouse Kit/Art/Meshes/Structures/Structure Props/Sprinkler 04.fbx using Guid(db9a43d893114524999d9c3b00b34665) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ae1c635f893e55d8d04ca88fa4ce6110') in 0.039032 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000115 seconds.
+  path: Assets/SciFi Warehouse Kit/Art/Textures/stairs_n.png
+  artifactKey: Guid(3255e8d68bec69245a29429b6b4ef78f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/SciFi Warehouse Kit/Art/Textures/stairs_n.png using Guid(3255e8d68bec69245a29429b6b4ef78f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c2f2c9f9f927aa0dc46c83ff4eb5f354') in 0.090222 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000335 seconds.
+  path: Assets/SciFi Warehouse Kit/Prefabs/Props/Crates Barrels Pallets/Pallet Variations/Pallet Variation 06.prefab
+  artifactKey: Guid(1b2e0c15a34b5e24ea266246ee7534f8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/SciFi Warehouse Kit/Prefabs/Props/Crates Barrels Pallets/Pallet Variations/Pallet Variation 06.prefab using Guid(1b2e0c15a34b5e24ea266246ee7534f8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '886815f8dc72c0869eaaa122120f696f') in 0.037465 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 29
+========================================================================
+Received Import Request.
+  Time since last request: 0.064037 seconds.
+  path: Assets/SciFi Warehouse Kit/Art/Textures/cart_a.png
+  artifactKey: Guid(383fa6f8d555fc94e948a2d49cc5b624) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/SciFi Warehouse Kit/Art/Textures/cart_a.png using Guid(383fa6f8d555fc94e948a2d49cc5b624) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '5231af77a01c7b1acfd94f871421bfb0') in 0.063958 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.007425 seconds.
+  path: Assets/SciFi Warehouse Kit/Prefabs/Props/Crates Barrels Pallets/Crate Long.prefab
+  artifactKey: Guid(e2fdcaac11701fe438724a8a8b3a76c5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/SciFi Warehouse Kit/Prefabs/Props/Crates Barrels Pallets/Crate Long.prefab using Guid(e2fdcaac11701fe438724a8a8b3a76c5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '3c1bf4ab58a75970772b0f014746de1a') in 0.038315 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000660 seconds.
+  path: Assets/SciFi Warehouse Kit/Art/Meshes/Structures/Catwalk/Catwalk Rails Short.fbx
+  artifactKey: Guid(27ecae3d31c802f46bb92e6d54dd743c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/SciFi Warehouse Kit/Art/Meshes/Structures/Catwalk/Catwalk Rails Short.fbx using Guid(27ecae3d31c802f46bb92e6d54dd743c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '02d47e2cb009c00db9e9c7c95f7b79d0') in 0.058888 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000857 seconds.
+  path: Assets/SciFi Warehouse Kit/Art/Textures/walkway_n.png
+  artifactKey: Guid(c42df488497626e43ace6a26270b0c56) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/SciFi Warehouse Kit/Art/Textures/walkway_n.png using Guid(c42df488497626e43ace6a26270b0c56) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ec64c7748a87d5966826f9f913841646') in 0.078451 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001535 seconds.
+  path: Assets/SciFi Warehouse Kit/Art/Textures/extinguisher_a.png
+  artifactKey: Guid(986145cfcac7b0849ae46bbdff06db4a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/SciFi Warehouse Kit/Art/Textures/extinguisher_a.png using Guid(986145cfcac7b0849ae46bbdff06db4a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '1f4ac7013df5556ab3133fd9c9266c5f') in 0.059464 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001880 seconds.
+  path: Assets/SciFi Warehouse Kit/Demo/Audio/SFX/Fan_St.wav
+  artifactKey: Guid(bea37e2f1d9209440aac9a3d03a16787) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/SciFi Warehouse Kit/Demo/Audio/SFX/Fan_St.wav using Guid(bea37e2f1d9209440aac9a3d03a16787) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'cc94a6566a39d882a5fc68a47168eec2') in 0.230008 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000624 seconds.
+  path: Assets/SciFi Warehouse Kit/Prefabs/Props/Crates Barrels Pallets/Pallet Variations/Pallet Variation 03.prefab
+  artifactKey: Guid(e02a45feff251dc44bcb22375712232e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/SciFi Warehouse Kit/Prefabs/Props/Crates Barrels Pallets/Pallet Variations/Pallet Variation 03.prefab using Guid(e02a45feff251dc44bcb22375712232e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c48bcf686b39619d259ef4dc1117132d') in 0.031288 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 25
+========================================================================
+Received Import Request.
+  Time since last request: 0.002520 seconds.
+  path: Assets/SciFi Warehouse Kit/Art/Meshes/Structures/Structure Props/Pipes 01.fbx
+  artifactKey: Guid(bc85683a6fc9dcc4eab2eb1651f60ff6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/SciFi Warehouse Kit/Art/Meshes/Structures/Structure Props/Pipes 01.fbx using Guid(bc85683a6fc9dcc4eab2eb1651f60ff6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ae2453cfed23d4ffac9197dafdc16780') in 0.074778 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.045865 seconds.
+  path: Assets/SciFi Warehouse Kit/Prefabs/Structures/Catwalk
+  artifactKey: Guid(3c8377d7229e41f459774e1d7898b0e8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/SciFi Warehouse Kit/Prefabs/Structures/Catwalk using Guid(3c8377d7229e41f459774e1d7898b0e8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '3f5471a52e255db5b0e4ce4649900274') in 0.047128 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000354 seconds.
+  path: Assets/SciFi Warehouse Kit/Prefabs/Structures/Ceiling
+  artifactKey: Guid(34ecbc8cfa471d14f8710fc13da2a283) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/SciFi Warehouse Kit/Prefabs/Structures/Ceiling using Guid(34ecbc8cfa471d14f8710fc13da2a283) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '6f620cb1f2053c64b0a12d1d379dcbdc') in 0.028174 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001053 seconds.
+  path: Assets/SciFi Warehouse Kit/Art/Textures/walls_s.png
+  artifactKey: Guid(3b02615374e602942a0ee9283cff5d8b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/SciFi Warehouse Kit/Art/Textures/walls_s.png using Guid(3b02615374e602942a0ee9283cff5d8b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '7be3ec81e15decc8abe269a7f856878d') in 0.097435 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000882 seconds.
+  path: Assets/SciFi Warehouse Kit/Art/Meshes/Structures/Catwalk/Catwalk Pillar Rails.fbx
+  artifactKey: Guid(5a4645c9d2fbfc64a8e636733c22e176) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/SciFi Warehouse Kit/Art/Meshes/Structures/Catwalk/Catwalk Pillar Rails.fbx using Guid(5a4645c9d2fbfc64a8e636733c22e176) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'b67fd65e62ba0eb87b02d0cd2e6a2f4b') in 0.050073 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.004431 seconds.
+  path: Assets/SciFi Warehouse Kit/Prefabs/Structures/Catwalk/Catwalk Corner.prefab
+  artifactKey: Guid(f3666c4739f55c24eb42ed8d7b508700) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/SciFi Warehouse Kit/Prefabs/Structures/Catwalk/Catwalk Corner.prefab using Guid(f3666c4739f55c24eb42ed8d7b508700) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '10234153b3f44ffce51760b1d834269c') in 0.043533 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/SciFi Warehouse Kit/Art/Textures/fan_n.png
+  artifactKey: Guid(3e5b45c25b7eed74880f8f97805917af) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/SciFi Warehouse Kit/Art/Textures/fan_n.png using Guid(3e5b45c25b7eed74880f8f97805917af) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '97b0a02af3aec879801cf29ffe37292b') in 0.078736 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.015853 seconds.
+  path: Assets/SciFi Warehouse Kit/Art/Meshes/Structures/Structure Props/Pipes 04.fbx
+  artifactKey: Guid(20c996ef2120d4f46878fd50f9f45703) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/SciFi Warehouse Kit/Art/Meshes/Structures/Structure Props/Pipes 04.fbx using Guid(20c996ef2120d4f46878fd50f9f45703) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c6f79a9511708a4e2b6458b39729d9a7') in 0.060740 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.002565 seconds.
+  path: Assets/SciFi Warehouse Kit/Art/Meshes/Structures/Structure Props/Fusebox 02.fbx
+  artifactKey: Guid(163b2c8b61a3ecb4ea45334400e257cc) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/SciFi Warehouse Kit/Art/Meshes/Structures/Structure Props/Fusebox 02.fbx using Guid(163b2c8b61a3ecb4ea45334400e257cc) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '5d993806c0ffc6938c893ccc0cd5ee2f') in 0.074501 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000694 seconds.
+  path: Assets/SciFi Warehouse Kit/Prefabs/Props/Ducts
+  artifactKey: Guid(0542446597743df4ebce8ab17cecc964) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/SciFi Warehouse Kit/Prefabs/Props/Ducts using Guid(0542446597743df4ebce8ab17cecc964) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c31f32ef0cd7aa2ab953089059463ae8') in 0.034516 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.020532 seconds.
+  path: Assets/SciFi Warehouse Kit/Prefabs/Props/Shelves/Shelf Variation 01.prefab
+  artifactKey: Guid(324f2a5232c3ab4488fe817c9ea94b63) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/SciFi Warehouse Kit/Prefabs/Props/Shelves/Shelf Variation 01.prefab using Guid(324f2a5232c3ab4488fe817c9ea94b63) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'aa8fb1adaa5c340b9b6f23cf0581b9ac') in 0.043428 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 162
+Editor requested this worker to shutdown with reason: balancing worker count downwards
+TcpMessagingSession - receive error
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
