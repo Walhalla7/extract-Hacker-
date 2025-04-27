@@ -8,14 +8,15 @@ public class PlayerAbilityManager : MonoBehaviour
     // ============================================================== Variables =====================================================
     // Object References
     public EnemyManager enemyManagerRef;
-    public CharacterController charCon; 
+    public CharacterController charCon;
     public Transform recallTracker;
     public TextMeshProUGUI energyText;
+    public EnergyBarManager energyBarRef;
 
     // Energy Variables
     private int energy = 10;
     private float energyRegenTimer = 0f;
-    public float energyRegenInterval = 10f; 
+    public float energyRegenInterval = 10f;
     private const int maxEnergy = 10;
 
     // X-Ray Variables
@@ -32,8 +33,8 @@ public class PlayerAbilityManager : MonoBehaviour
     // Smoke Granade Variables
     public GameObject cameraRef;
     public float throwSpeed = 5f;
-    public GameObject granadePrefab; 
-    
+    public GameObject granadePrefab;
+
     // ============================================================== Start =====================================================
     void Start()
     {
@@ -41,6 +42,7 @@ public class PlayerAbilityManager : MonoBehaviour
         {
             previousPositions[i] = transform.position;
         }
+        energyBarRef.SetMaxEnergy(maxEnergy);
     }
 
     // ============================================================== Update =====================================================
@@ -64,7 +66,6 @@ public class PlayerAbilityManager : MonoBehaviour
             energy -= 2;
             isXRayActive = true;
             xRayTimer = xRayDuration;
-            Debug.Log(energy);
         }
         if (Input.GetKeyDown(KeyCode.Alpha2) && energy > 2)
         {
@@ -75,32 +76,29 @@ public class PlayerAbilityManager : MonoBehaviour
             if (rb != null)
             {
                 rb.velocity = cameraRef.transform.forward * throwSpeed;
-            }       
+            }
             // Subtract Energy     
             energy -= 3;
-            Debug.Log(energy);
         }
         // Activate Recall
         if (Input.GetKeyDown(KeyCode.Alpha3) && energy > 4)
         {
-            Debug.Log("Recalling to position: " + previousPositions[4]);
 
             // Disable character controller and modify the postiion then re-enable controller
             if (charCon != null)
             {
-                charCon.enabled = false; 
+                charCon.enabled = false;
             }
 
-            transform.position = previousPositions[4]; 
+            transform.position = previousPositions[4];
 
-            if (charCon != null) 
+            if (charCon != null)
             {
                 charCon.enabled = true;
             }
 
             // Subtract Energy
             energy -= 5;
-            Debug.Log(energy);
         }
     }
 
@@ -115,21 +113,20 @@ public class PlayerAbilityManager : MonoBehaviour
             {
                 energy++;
                 energyRegenTimer = 0f;
-                Debug.Log(energy);
             }
         }
     }
 
     // ============================================================== X-Ray Function =====================================================
     // Timer logic for the X-Ray to de-activate itself after 5 sec
-     void ManageXRayTimer()
+    void ManageXRayTimer()
     {
         if (isXRayActive)
         {
             xRayTimer -= Time.deltaTime;
             if (xRayTimer <= 0f)
             {
-                enemyManagerRef.activateXRay(); 
+                enemyManagerRef.activateXRay();
                 isXRayActive = false;
             }
         }
@@ -157,6 +154,7 @@ public class PlayerAbilityManager : MonoBehaviour
     // Updates current energy level in the textbox
     void UpdateEnergyText()
     {
-        energyText.GetComponent<TextMeshProUGUI>().text = "Current Energy: " + energy + " / 10";
+        //energyText.GetComponent<TextMeshProUGUI>().text = "Current Energy: " + energy + " / 10";
+        energyBarRef.SetEnergy(energy);
     }
 }

@@ -10,6 +10,9 @@ public class EnemyManager : MonoBehaviour
 
     private bool xRayActive;
 
+    // Agression Level
+    public float prisonAwarenessLevel;
+
     // ============================================================== X-Ray Variables =====================================================
     // Applies the change of visibility layer to all the children of the component
     void SetLayerAllChildren(Transform root, int layer)
@@ -26,13 +29,13 @@ public class EnemyManager : MonoBehaviour
     public void activateXRay()
     {
         // De-Activate X-Ray
-        if(xRayActive)
+        if (xRayActive)
         {
             xRayActive = !xRayActive;
             int layerNum = (int)Mathf.Log(defaultLayer.value, 2);
             gameObject.layer = layerNum;
 
-            if(transform.childCount > 0)
+            if (transform.childCount > 0)
             {
                 SetLayerAllChildren(transform, layerNum);
             }
@@ -44,11 +47,11 @@ public class EnemyManager : MonoBehaviour
             int layerNum = (int)Mathf.Log(xRayLayer.value, 2);
             gameObject.layer = layerNum;
 
-            if(transform.childCount > 0)
+            if (transform.childCount > 0)
             {
                 SetLayerAllChildren(transform, layerNum);
             }
         }
-        
+
     }
 }
