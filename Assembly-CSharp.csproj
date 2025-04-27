@@ -59,6 +59,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\StateMachine\IDetectionStrategy.cs" />
+    <Compile Include="Assets\Scripts\CanvasManagerScript.cs" />
     <Compile Include="Assets\Scripts\GameManagerScript.cs" />
     <Compile Include="Assets\Scripts\SmokeGranadeShapeScript.cs" />
     <Compile Include="Assets\Scripts\Enemy.cs" />
@@ -66,6 +67,7 @@
     <Compile Include="Assets\Scripts\EnemyStates\EnemyBaseState.cs" />
     <Compile Include="Assets\Scripts\DoorScript.cs" />
     <Compile Include="Assets\Scripts\EnemyStates\EnemyWonderState.cs" />
+    <Compile Include="Assets\Scripts\WinZone.cs" />
     <Compile Include="Assets\Scripts\StateMachine\FuncPredicate.cs" />
     <Compile Include="Assets\Scripts\StateMachine\IState.cs" />
     <Compile Include="Assets\Scripts\StateMachine\IPredicate.cs" />
