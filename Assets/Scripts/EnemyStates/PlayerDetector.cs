@@ -52,9 +52,6 @@ public class PlayerDetector : MonoBehaviour
             }
 
             currentEnemyAwareness = Mathf.Min(currentEnemyAwareness + totalAwarenessGained, maxEnemyAwareness);
-            Debug.Log("currentNoticeRatio: " + currentNoticeRatio);
-            Debug.Log("generalEnemyAwareness: " + generalEnemyAwareness);
-            Debug.Log("globalPrisonAwareness: " + globalPrisonAwareness);
         }
         else
         {
