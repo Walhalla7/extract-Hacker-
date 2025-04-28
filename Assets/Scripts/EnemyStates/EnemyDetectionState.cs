@@ -22,7 +22,6 @@ public class EnemyDetectionState : EnemyBaseState
 
     public override void OnEnter()
     {
-        Debug.Log("Detect");
         animator.CrossFade(WalkHash, crossFadeDuration);
         lightRef.color = Color.yellow;
     }

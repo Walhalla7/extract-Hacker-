@@ -48,4 +48,12 @@ public class Enemy : MonoBehaviour
     {
         stateMachine.FixedUpdate();
     }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            Debug.Log("death");
+        }
+    }
 }
