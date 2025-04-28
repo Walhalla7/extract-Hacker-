@@ -14,6 +14,7 @@ public class Enemy : MonoBehaviour
     [SerializeField, Child] Animator animator;
     [SerializeField, Child] Light lightRef;
     [SerializeField] float wanderRadius = 15f;
+    public GameObject LoseCanvas;
 
 
     StateMachine stateMachine;
@@ -54,6 +55,8 @@ public class Enemy : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             Debug.Log("death");
+            LoseCanvas.SetActive(true);
+            Time.timeScale = 0;
         }
     }
 }

@@ -383,6 +383,7 @@
 "Assets/Scripts/EnergyBarManager.cs"
 "Assets/Scripts/GameManagerScript.cs"
 "Assets/Scripts/KeyCardScript.cs"
+"Assets/Scripts/MainMenu.cs"
 "Assets/Scripts/PlayerAbilityManager.cs"
 "Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/SmokeEffectScript.cs"
@@ -399,6 +400,7 @@
 "Assets/Scripts/StateMachine/StateMachine.cs"
 "Assets/Scripts/StateMachine/Transition.cs"
 "Assets/Scripts/Timer.cs"
+"Assets/Scripts/WinBoxScript.cs"
 -langversion:9.0
 
 /deterministic
