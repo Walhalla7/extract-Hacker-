@@ -57,6 +57,7 @@ public class Enemy : MonoBehaviour
             Debug.Log("death");
             LoseCanvas.SetActive(true);
             Time.timeScale = 0;
+            Cursor.lockState = CursorLockMode.None;
         }
     }
 }

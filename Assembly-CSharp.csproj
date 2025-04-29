@@ -63,6 +63,7 @@
     <Compile Include="Assets\Scripts\SmokeGranadeShapeScript.cs" />
     <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\SmokeEffectScript.cs" />
+    <Compile Include="Assets\Scripts\CanvasChangerScript.cs" />
     <Compile Include="Assets\Scripts\EnemyStates\EnemyBaseState.cs" />
     <Compile Include="Assets\Scripts\DoorScript.cs" />
     <Compile Include="Assets\Scripts\EnemyStates\EnemyWonderState.cs" />
@@ -82,7 +83,6 @@
     <Compile Include="Assets\Scripts\StateMachine\StateMachine.cs" />
     <Compile Include="Assets\Scripts\StateMachine\BaseState.cs" />
     <Compile Include="Assets\Scripts\EnemyStates\PlayerDetector.cs" />
-    <Compile Include="Assets\Scripts\WinBoxScript.cs" />
     <Compile Include="Assets\Scripts\StateMachine\JumpState.cs" />
     <Compile Include="Assets\Scripts\PlayerAbilityManager.cs" />
     <Compile Include="Assets\Scripts\EnemyStates\EnemyDetectionState.cs" />
