@@ -109,6 +109,8 @@ MonoBehaviour:
   animator: {fileID: 4020789516906029434}
   lightRef: {fileID: 6986226033996279906}
   wanderRadius: 15
+  LoseCanvas: {fileID: 0}
+  loseSound: {fileID: 0}
 --- !u!114 &5109812023328199070
 MonoBehaviour:
   m_ObjectHideFlags: 0

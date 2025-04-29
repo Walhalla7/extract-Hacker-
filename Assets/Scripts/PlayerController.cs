@@ -27,6 +27,7 @@ public class PlayerController : MonoBehaviour
     //Audio
     public AudioSource keyCard;
     public AudioSource walking;
+    public AudioSource falling;
 
 
 
@@ -78,10 +79,14 @@ public class PlayerController : MonoBehaviour
                 yVelocity = jumpPower;
 
             }
+            if (falling.isPlaying)
+                falling.Stop();
 
         }
         else
         {
+            if (!falling.isPlaying)
+                falling.Play();
             if (walking.isPlaying)
                 walking.Stop();
             yVelocity += Physics.gravity.y * gravityModifier * Time.deltaTime;

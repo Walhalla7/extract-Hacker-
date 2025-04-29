@@ -35,6 +35,12 @@ public class PlayerAbilityManager : MonoBehaviour
     public float throwSpeed = 5f;
     public GameObject granadePrefab;
 
+
+    //Audio
+    public AudioSource granadeThrowSound;
+    public AudioSource recallSound;
+    public AudioSource xraySound;
+
     // ============================================================== Start =====================================================
     void Start()
     {
@@ -66,12 +72,14 @@ public class PlayerAbilityManager : MonoBehaviour
             energy -= 2;
             isXRayActive = true;
             xRayTimer = xRayDuration;
+            xraySound.Play();
         }
         if (Input.GetKeyDown(KeyCode.Alpha2) && energy > 2)
         {
             // Instantiate the Granade Object
             GameObject grenade = Instantiate(granadePrefab, cameraRef.transform.position + cameraRef.transform.forward, Quaternion.identity);
             Rigidbody rb = grenade.GetComponent<Rigidbody>();
+            granadeThrowSound.Play();
             // Apply the velocity to the Granade 
             if (rb != null)
             {
@@ -91,6 +99,7 @@ public class PlayerAbilityManager : MonoBehaviour
             }
 
             transform.position = previousPositions[4];
+            recallSound.Play();
 
             if (charCon != null)
             {
@@ -126,6 +135,7 @@ public class PlayerAbilityManager : MonoBehaviour
             xRayTimer -= Time.deltaTime;
             if (xRayTimer <= 0f)
             {
+                xraySound.Stop();
                 enemyManagerRef.activateXRay();
                 isXRayActive = false;
             }

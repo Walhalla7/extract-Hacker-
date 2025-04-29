@@ -7,13 +7,15 @@ public class SmokeEffectScript : MonoBehaviour
     //============================================ Variables ===============================================
     public float smokeSize = 2f;
     public float durationTime = 5f;
+    public AudioSource sound;
 
     //============================================ Start ===============================================
     // Sets the size of the smoke bomb and starts the self destruct timer
     void Start()
     {
-        transform.localScale = new Vector3(smokeSize,smokeSize,smokeSize);
+        transform.localScale = new Vector3(smokeSize, smokeSize, smokeSize);
         StartCoroutine(SelfDestruct());
+        sound.Play();
     }
 
     //============================================ Self-Destruct Functions ===============================================
