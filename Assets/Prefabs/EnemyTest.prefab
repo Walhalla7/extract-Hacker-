@@ -124,9 +124,9 @@ MonoBehaviour:
   detectionAngle: 60
   detectionRadius: 10
   innerDetectionRadius: 5
-  detectionCooldown: 1
+  detectionCooldown: 0.2
   attackRange: 2
-  noticeRate: 0.1
+  noticeRate: 1
   currentEnemyAwareness: 0
   generalEnemyAwareness: 0
   maxEnemyAwareness: 100
