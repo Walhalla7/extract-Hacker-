@@ -24,6 +24,11 @@ public class PlayerController : MonoBehaviour
     // Animator
     public Animator animator;
 
+    //Audio
+    public AudioSource keyCard;
+    public AudioSource walking;
+
+
 
     // ============================================================== Update =====================================================
     void Update()
@@ -47,6 +52,16 @@ public class PlayerController : MonoBehaviour
 
         float currentSpeed = Input.GetKey(KeyCode.LeftShift) ? runSpeed : moveSpeed;
         moveInput = horizontalInput * currentSpeed;
+        if (horizontalInput.magnitude > 0)
+        {
+            if (!walking.isPlaying)
+                walking.Play();
+        }
+        else
+        {
+            if (walking.isPlaying)
+                walking.Stop();
+        }
 
         moveInput.y = yVelocity;
         charCon.Move(moveInput * Time.deltaTime);
@@ -61,10 +76,14 @@ public class PlayerController : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 yVelocity = jumpPower;
+
             }
+
         }
         else
         {
+            if (walking.isPlaying)
+                walking.Stop();
             yVelocity += Physics.gravity.y * gravityModifier * Time.deltaTime;
         }
     }
@@ -113,6 +132,7 @@ public class PlayerController : MonoBehaviour
                 if (keyRef != null)
                 {
                     keyRef.KeyInteract();
+                    keyCard.Play();
                 }
             }
 

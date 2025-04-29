@@ -117,7 +117,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db996563de264e841b7fbb0cd8f0ff10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  smokeSize: 5
+  smokeSize: 10
   durationTime: 5
 --- !u!1 &7285598396089929168
 GameObject:

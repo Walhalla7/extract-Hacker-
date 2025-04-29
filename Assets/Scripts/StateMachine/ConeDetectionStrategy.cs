@@ -40,7 +40,7 @@ public class ConeDetectionStrategy : IDetectionStrategy
             // If the ray hits something that's not the player, there's an obstruction
             if (!hit.transform.CompareTag("Player"))
             {
-                Debug.Log("Line of sight blocked by: " + hit.transform.name);
+
                 return false;
             }
 

@@ -21,6 +21,9 @@ public class DoorScript : MonoBehaviour
     private Vector3 leftClosedPos, rightClosedPos;
     private Vector3 leftOpenPos, rightOpenPos;
 
+    // Audio Source
+    public AudioSource sound;
+
     // ============================================================== Start =====================================================
     void Start()
     {
@@ -55,6 +58,7 @@ public class DoorScript : MonoBehaviour
 
         isOpen = true;
         // Animate Door opening
+        sound.Play();
         float elapsed = 0f;
         while (elapsed < 1f)
         {
@@ -76,6 +80,7 @@ public class DoorScript : MonoBehaviour
         isOpen = false;
 
         // Animate Door Closing
+        sound.Play();
         float elapsed = 0f;
         while (elapsed < 1f)
         {
